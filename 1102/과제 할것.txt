@@ -1,0 +1,48 @@
+음식점이라는 클래스와 사람이라는 클래스를 만들어서 밥을 먹으러갈 장소를 추천해주자.
+음식점이라는 클래스에는 수용인원과 가격, 분위기가 들어간다.
+ 2명이하가 가는 곳과 3명 이상이 가는 곳을 공간 클래스를 상속해서 다시 클래스로 만든다.
+ 2명 이하가 가는 곳에는 즐길거리를 추가해주고 3명 이상이 가는 곳에는 할인율을 추가해준다.
+ 사람 클래스에는 소지금과 인원수, 성비가 들어간다. 성비에 따라서 가는 곳을 달리하고 혼자 일 경우도 남자냐 여자냐에 따라 다르게 가게 짜보자.
+
+public class Restaurant{
+	private :
+		 int party
+		 double price
+		 String atmosphere
+	 public :
+		 Restaurant(int num, double money, String text){
+		this.party = num
+		this.price = money
+		this.atmosphere = text
+}
+}
+public class Couple : public Restaurant{
+	private : 
+		 String activity
+	public : 
+		 Restaurant(String fun){
+		this.activity = fun
+}
+}
+
+public class Gang : public Restaurant{
+	private :
+		 double discount
+	public :
+		Gang(double rate){
+		this.discount = rate
+}
+}
+
+public class Human{
+	private :
+		 int person
+		 int sex
+		 double money
+	public :
+		Human(int number, int woman, double price){
+		this.person = number
+		this.sex = woman
+		this.money = price
+} 
+}
