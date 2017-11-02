@@ -8,21 +8,21 @@ public class BinaryTree {//트리노드를 이용한 바이너리 트리 생성
     Scanner scan = new Scanner(System.in);
 
     public TreeNode insertKey(TreeNode root,int dir,String data){//바이너리 트리에 노드를 달아줌
-        TreeNode Hw = root;
-        TreeNode NewNode = new TreeNode(dir,data);
+        TreeNode hw = root;
+        TreeNode newNode = new TreeNode(dir,data);
        // char direction = scan.next().charAt(0);
-        if (Hw == null)
-            return NewNode;
-        else if(Hw.data > NewNode.data ){
-            Hw.left = insertKey(Hw.left,dir,data); // 새로 생긴 노드의 주소가 기존 노드의 주소보다 작으면 왼쪽에 있는 노드와 비교
-            return Hw;
+        if (hw == null)
+            return newNode;
+        else if(hw.data > newNode.data ){
+            hw.left = insertKey(hw.left,dir,data); // 새로 생긴 노드의 주소가 기존 노드의 주소보다 작으면 왼쪽에 있는 노드와 비교
+            return hw;
         }
-        else if(Hw.data < NewNode.data){ //새로 생긴 노드의 주소가 기존 노드의 주소보다 크면 오른쪽에 있는 노드와 비교
-            Hw.right = insertKey(Hw.right, dir,data);
-            return Hw;
+        else if(hw.data < newNode.data){ //새로 생긴 노드의 주소가 기존 노드의 주소보다 크면 오른쪽에 있는 노드와 비교
+            hw.right = insertKey(hw.right, dir,data);
+            return hw;
         }
         else
-            return Hw;
+            return hw;
     }
     public void insertBst(int dir,String data){//노드에 들어갈 값을 입력받고 그걸 뿌리에 달아줌
            root = insertKey(root,dir,data);
