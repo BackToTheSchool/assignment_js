@@ -2,7 +2,7 @@ package BST;
 
 public class hw23 {
     public static void main(String[] args) {
-        BinaryTree Test = new BinaryTree();
+        BinaryTree test = new BinaryTree();
         Test.insertBst(6,"배터리 단자가 부식 되었는가 ?");
         Test.insertBst(5,"단자를 깨끗하게 하고 다시 시도해");
         Test.insertBst(7,"케이블을 교체하고 다시 시도 해 ");
