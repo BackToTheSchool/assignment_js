@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html PUBLIC"-//W3C//DTD XTML 1.0 Transitional//EN"
+""http://www.w3.org/TR/xhtml1-transition.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+<title>페이지별 타이틀 : COFORWARD</title>
+<meta name = "description" content ="페이지별description"/>
+<meta name="keywords" cpmtemt="페이지별keyword"/>
+<link rel = "shortcut icon" href="img/common/coforward.ico"/>
+</head>
+<body>
+<p>HEllo world</p>
+</body>
+</html>
