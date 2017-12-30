@@ -1,18 +1,17 @@
-
-class Restaurant :
+class Restaurant : # This is Restaurant, this class describe atmosphere and name
     def __init__(self, atmosphere, name) :
          self.atmosphere = atmosphere
          self.name = name
-    def show(self):
+    def show(self): # This method wil show about restaurnat
         print("This restaurant is %s. %s are %s" % (self.name, self.name, self.atmosphere))
 
-class CoupleRestaurant(Restaurant) :
+class CoupleRestaurant(Restaurant) : # CoupleRestaurant is come from Restaurant and describe activity and menu
     def __init__(self,atmosphere,name,activity,menu):
         self.activity = activity
         self.menu = dict(menu)
         super().__init__(atmosphere, name)
 
-    def show(self,Human):
+    def show(self,Human): # This method will get Human class and it suggest some menu. It's up to your budget.
         super().show()
         print("You can enjoy %s in here." % self.activity)
         name_menu = list(self.menu.keys())
@@ -31,12 +30,12 @@ class CoupleRestaurant(Restaurant) :
         print('\n')
 
 
-class FamilyRestaurant(Restaurant) :
+class FamilyRestaurant(Restaurant) : # This class is come from Restaurant and describe discounty and menu.
     def __init__(self,atmosphere,name,discount,menu):
         self.discount = float(discount)
         self.menu = dict(menu)
         super().__init__(atmosphere, name)
-    def show(self,Human):
+    def show(self,Human): # same as CoupleRestaurant.show
         super().show()
         name_menu = list(self.menu.keys())
         price_menu = list(self.menu.values())
