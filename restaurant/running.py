@@ -1,3 +1,8 @@
+# code name : Restaurant
+# programmer : Joon Soo Park
+# description : It will check Restaurnat and Human work perfectly.
+
+
 import Restaurant
 import Human
 

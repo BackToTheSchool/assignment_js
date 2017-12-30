@@ -1,3 +1,8 @@
+# code name : Restaurant
+# programmer : Joon Soo Park
+# description : This file is about restaurant. This file got 3 type of resaurant. It will devide by Human.person
+
+
 class Restaurant : # This is Restaurant, this class describe atmosphere and name
     def __init__(self, atmosphere, name) :
          self.atmosphere = atmosphere
